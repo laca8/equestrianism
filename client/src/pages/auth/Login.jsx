@@ -14,7 +14,6 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [notify, setNotify] = useState("");
-
   const handleSubmit = () => {
     const user = { email, password };
     dispatch(loginUser(user));
