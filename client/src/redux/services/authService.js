@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "/api/auth";
+const API_URL = "https://equestrianism.vercel.app/api/auth";
 //register
 
 const register = async (user) => {
