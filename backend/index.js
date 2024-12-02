@@ -14,7 +14,7 @@ db();
 dotenv.config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: ['https://equestrianism-full-4t6sxodgh-visiongame.vercel.app/'], methods:['POST','GET','PUT','DELETE'],credentials: true }));
+app.use(cors({ origin: ['https://equestrianism-full-4t6sxodgh-visiongame.vercel.app'], methods:['POST','GET','PUT','DELETE'],credentials: true }));
 app.use("/uploads", express.static("uploads"));
 
 app.get("/", (req, res) => {
