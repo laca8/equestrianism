@@ -1,6 +1,7 @@
 import axios from "axios";
 const API_URL = "/api/auth";
 //register
+
 const register = async (user) => {
   let config = {
     headers: {
