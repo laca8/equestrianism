@@ -17,7 +17,9 @@ import { ToastContainer } from "react-toastify";
 import HorseDetails from "./component/horse/HorseDetails";
 import Trains from "./component/train/Trains";
 import Form from "./component/simile_form/Form";
+import axios from 'axios'
 function App() {
+  axios.defaults.withCredentials = true
   return (
     <div>
       <ToastContainer position="top-center" reverseOrder={false} />
