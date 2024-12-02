@@ -9,6 +9,8 @@ const register = async (user) => {
       "Access-Control-Allow-Origin": "*",
     },
   };
+axios.defaults.withCredentials = true
+  
   const response = await axios.post(`${API_URL}/register`, user, config);
   if (response.data) {
     localStorage.setItem("user", JSON.stringify(response.data));
